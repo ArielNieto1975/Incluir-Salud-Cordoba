@@ -1,0 +1,137 @@
+.navbar {
+    background-color: $colordark;
+    & div:first-child {
+        width: 100%;
+        background-color: $colorlight;
+    
+    }
+    &__logo {
+        background-color: $colorlight;
+        color: $colordark;
+        text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+        padding: 5px 0;
+        z-index: 100;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        & img {
+            // position: relative ;
+            animation: none !important;  
+            opacity: 1 !important;  
+            filter: drop-shadow(1px 1px 1px #000);    
+        }
+    }
+
+    &__accesos {
+        display: flex;
+        justify-content: center;
+        height: 49px;
+        :hover {
+            background-color: $colorlight;
+            & a {
+                color: $colordark;
+            }
+        }
+        & li ul{
+            display: none;
+            position: absolute;
+            min-width: 100px;
+            width: 290px;
+        }
+
+        & li:hover > ul{
+            display: block;
+            margin-top: 5px;
+            background-color: $colordark;
+            .sub {
+              background-color: $colordark;
+              color: $colorlight;
+              :hover{
+                  background-color: $colorlight;
+                  color: $colordark;
+                  padding: 5px;
+              }
+            }
+            & li{
+                & a{
+                color: $colorlight;
+                }
+            }
+        }
+     
+        & li {
+            margin: 10px 30px;
+            padding: 5px;
+            list-style: none;
+            & a {
+                color: $colorlight;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                letter-spacing: 3px;
+            }
+        }
+        & > li{
+            float: left;
+            
+        }
+    }
+     // movile
+  &__accesos-movile {
+    display: none;
+    &:hover > ul {
+      display: block;
+      li {
+        display: block;
+      }
+    }
+
+    i {
+      font-size: 35px;
+      padding-left: 85vw;
+      color: white;
+    }
+    ul {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 120px;
+      padding-top: 20PX;
+      width: 100%;      
+      background-color: $colordark ;
+      z-index: 10;
+      li {
+        padding: 15px 0;
+        text-align: center;
+        a {
+          color: $colorlight;
+          font-weight: bold;
+          font-size: larger;
+        }
+      }
+    }
+    
+  }
+}
+
+@media (max-width:900px) {
+    .navbar{
+        &__accesos {
+            & li {
+                margin: 10px 15px;
+            }
+        }
+    }
+}
+
+@media (max-width:767px){
+    .navbar__accesos{
+        display: none;
+    }
+    .navbar__accesos-movile {
+      display: block;
+    }
+}
