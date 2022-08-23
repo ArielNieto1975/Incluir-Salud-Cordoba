@@ -351,3 +351,63 @@ main {
   .contact__location iframe {
     width: 216px;
     height: 160px; } }
+
+.tituloarea {
+  padding: 10px;
+  background-color: rgba(128, 128, 128, 0.1);
+  font-size: 1.8em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  margin: 0 auto 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif; }
+
+.disca {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  gap: 20px;
+  padding-bottom: 50px; }
+  .disca__seccion {
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    border: 1px solid green;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), grey); }
+    .disca__seccion a {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #ffd; }
+    .disca__seccion img {
+      margin-top: 20px;
+      min-width: 200px;
+      width: 40%;
+      position: relative !important;
+      border-radius: 10px; }
+    .disca__seccion:hover {
+      transform: scale(0.95, 0.95);
+      transition: all .5s;
+      box-shadow: 5px 5px 25px #2a2aaf; }
+
+@media (max-width: 1250px) {
+  .disca {
+    grid-template-columns: repeat(2, 1fr); }
+    .disca__seccion img {
+      width: 90%; } }
+
+@media (max-width: 650px) {
+  .disca {
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 500px) {
+  .disca__seccion {
+    font-size: 1em; }
+  .tituloarea {
+    font-size: 1.5rem; } }
