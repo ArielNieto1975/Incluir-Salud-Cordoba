@@ -216,6 +216,13 @@ main {
   .introduccion__video iframe {
     width: 70vw; } }
 
+@media (max-width: 425px) {
+  .contact__place li {
+    font-size: small; }
+  .contact__place iframe {
+    width: 100%;
+    height: 100%; } }
+
 .footer {
   background-color: #222;
   padding: 15px; }

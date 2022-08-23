@@ -138,3 +138,14 @@ main {
         }
     }
 }
+@media (max-width:425px) {
+    .contact__place {
+        & li {
+        font-size: small;
+        }
+        & iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
