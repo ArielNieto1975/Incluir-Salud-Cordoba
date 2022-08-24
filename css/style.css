@@ -126,11 +126,12 @@ main {
   margin: 30px 0; }
   .introduccion__video iframe {
     box-shadow: 0px 0px 20px #2a2aaf;
-    width: 30vw; }
+    width: 30vw;
+    max-width: 450px; }
   .introduccion__info {
     text-align: left;
     padding-left: 30px;
-    width: 35vw; }
+    width: calc(100% - 500px); }
 
 .prestaciones {
   background-image: linear-gradient(to right, #2a2aaf, #ffd); }
@@ -185,12 +186,25 @@ main {
     text-align: center;
     text-shadow: 1px 5px 10px #111148; }
 
+.whats {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+  padding-bottom: 30px; }
+  .whats a img:hover {
+    filter: drop-shadow(2px 1px 10px #37f337); }
+
 @media (max-width: 1000px) {
   .introduccion {
     flex-direction: column;
     align-content: center; }
     .introduccion__info {
       width: 100vw; } }
+
+@media (max-width: 1450px) {
+  .introduccion__info {
+    width: 35vw; } }
 
 @media (max-width: 1200px) {
   .introduccion {
