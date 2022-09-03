@@ -46,6 +46,7 @@ main {
     align-content: center;
     gap: 20px;
     text-align: center;
+
     &__disca, &__medica {
         font-family: 'Kanit', sans-serif;
         font-size: 1.5em;
@@ -57,15 +58,18 @@ main {
         height: 30%;
         display: flex;
         flex-direction: column;
-        
+        &:hover {
+            border: 1px solid $colordark;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), $colordark);
+        }
         
         & a {
             color: $colorlight;
+            
         }
         & img {
             margin-top: 20px;
             width: 40%;
-            // position: relative !important;
             height: 50%;
         }
     }

@@ -34,8 +34,8 @@ a {
       color: #2a2aaf; }
     .navbar__logo img {
       animation: none !important;
-      opacity: 1 !important;
-      filter: drop-shadow(1px 1px 1px #000); }
+      filter: drop-shadow(1px 1px 1px #000);
+      opacity: 1 !important; }
 
 .container__menu {
   position: sticky;
@@ -247,6 +247,9 @@ main {
     height: 30%;
     display: flex;
     flex-direction: column; }
+    .presta__disca:hover, .presta__medica:hover {
+      border: 1px solid #2a2aaf;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), #2a2aaf); }
     .presta__disca a, .presta__medica a {
       color: #ffd; }
     .presta__disca img, .presta__medica img {
