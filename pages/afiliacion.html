@@ -13,7 +13,7 @@
     <header>
         <div>
             <div class="navbar__logo">
-                <a href="../index.html"  class="navbar__logo">
+                <a href="../index.html"  class="navbar__logo-1">
                     <h4>INCLUIR</h4>
                     <img src="../assets/logo.webp" alt="" width="60px">
                     <h4>SALUD</h4>               
@@ -26,51 +26,29 @@
     </header>
     <main>
 
-        <nav class="navbar">
-            
-            
-            <ul class="navbar__accesos">
-                <li class="navbar__accesos__link"><a href="../index.html">INICIO</a></li>
-                <li class="navbar__accesos__link">
-                    <a href="./nosotros.html">NOSOTROS</a>
-                </li>
-                <li class="navbar__accesos__link">
-                    <a href="./afiliacion.html">AFILIACION</a>
-                </li>
-                <li class="navbar__accesos__link">
-                    <a href="">PRESTACIONES</a>
+        <div class="container__menu">
+            <div class="menu">
+                <input type="checkbox" id="check__menu">
+                <label id="label__check" for="check__menu">
+                    <i class="fa-solid fa-bars icon__menu"></i>
+                </label>
+                <nav>
                     <ul>
-                        <li class="sub">
-                            <a class="sub" href="./area_discapacidad.html" titular>AREA DISCAPACIDAD</a>
+                        <li><a href="../index.html" id="selected">Inicio</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./afiliacion.html">Afiliación</a></li>
+                        <li><a href="./prestaciones.html">Prestaciones</a>
+                            <ul>
+                                <li><a href="./area_discapacidad.html">Area Discapacidad</a></li>
+                                <li><a href="./area_medica.html">Area Médica</a></li>
+                            </ul>
                         </li>
-                        <li class="sub">
-                            <a class="sub" href="./area_medica.html">AREA MEDICA</a>
-                        </li>
+                        <li><a href="./contacto.html">Contacto</a></li>
                     </ul>
-                </li>   
-                <li class="navbar__accesos__link">
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-            <div class="navbar__accesos-movile">
-                <i class="bi bi-list"></i>
-                <ul>
-                    <li class="navbar__accesos__link"><a href="../index.html">INICIO</a></li>
-                    <li class="navbar__accesos__link">
-                        <a href="./nosotros.html">NOSOTROS</a>
-                    </li>
-                    <li class="navbar__accesos__link">
-                        <a href="./afiliacion.html">AFILIACION</a>
-                    </li>
-                    <li class="navbar__accesos__link">
-                    <a class="sub" href="./prestaciones.html" titular>PRESTACIONES</a>
-                    </li>  
-                    <li class="navbar__accesos__link">
-                        <a href="./contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
+                </nav>
             </div>
-        </nav>
+
+        </div>
 
         <section class="main">
             <article class="afilia">
