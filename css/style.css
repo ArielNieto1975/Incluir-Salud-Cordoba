@@ -63,22 +63,20 @@ nav ul li {
   height: 100%;
   list-style: none;
   position: relative; }
-
-nav > ul > li a {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  color: #fff;
-  align-items: center;
-  padding: 14px;
-  text-transform: uppercase;
-  font-size: 14px;
-  transition: all 300ms ease; }
-
-nav > ul > li > a:hover {
-  transform: scale(1.1);
-  background-color: #0074c7;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
+  nav ul li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    padding: 14px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease; }
+    nav ul li a:hover {
+      transform: scale(1.1);
+      background-color: #0074c7;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
 
 #selected {
   transform: scale(1.1);
@@ -101,40 +99,37 @@ nav ul li ul {
   z-index: 10;
   transition: all 300ms ease;
   border-radius: 5px; }
+  nav ul li ul::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+    position: absolute;
+    top: -12px;
+    left: 20px; }
+  nav ul li ul li a {
+    display: block;
+    color: #0099f9;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease; }
+    nav ul li ul li a:hover {
+      background: #0074c7;
+      color: #fff;
+      transform: scale(1.1);
+      padding-left: 30px;
+      font-size: 14px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
 
 nav ul li:hover ul {
   visibility: visible;
   opacity: 1;
   top: 50px; }
-
-nav ul li ul::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-bottom: 12px solid white;
-  position: absolute;
-  top: -12px;
-  left: 20px; }
-
-nav ul li ul li a {
-  display: block;
-  color: #0099f9;
-  padding: 6px;
-  padding-left: 14px;
-  margin-top: 10px;
-  font-size: 14px;
-  text-transform: uppercase;
-  transition: all 300ms ease; }
-
-nav ul li ul li a:hover {
-  background: #0074c7;
-  color: #fff;
-  transform: scale(1.1);
-  padding-left: 30px;
-  font-size: 14px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
 
 /* elementos responsive */
 .icon__menu {
@@ -286,7 +281,8 @@ main {
   margin: 30px;
   padding-bottom: 30px; }
   .whats a img:hover {
-    filter: drop-shadow(2px 1px 10px #37f337); }
+    filter: drop-shadow(2px 1px 10px #37f337);
+    transform: scale(1.1); }
 
 @media (max-width: 1000px) {
   .introduccion {
@@ -345,7 +341,10 @@ main {
       font-weight: bold; }
       .footer__expte a img {
         width: 15%;
-        padding-left: 5px; }
+        padding-left: 5px;
+        transition: all 300ms ease; }
+        .footer__expte a img:hover {
+          transform: scale(1.1); }
 
 .textwidget {
   text-align: center;

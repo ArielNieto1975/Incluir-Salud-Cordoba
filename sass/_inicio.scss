@@ -108,6 +108,7 @@ main {
     padding-bottom: 30px;
     & a img:hover {
         filter: drop-shadow(2px 1px 10px rgb(55, 243, 55));
+        transform: scale(1.1);
     }
 }
 
