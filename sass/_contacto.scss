@@ -1,4 +1,4 @@
-.contact {   
+.contact {
     font-family: verdana;
     // padding: 30px;
     display: flex;
@@ -18,7 +18,7 @@
         margin: 0 auto;
         gap: 10px;
         padding: 10px;
-       
+
         & input, textarea {
             border-radius: 10px;
             border: 1px solid $colordark;
@@ -27,28 +27,97 @@
             text-transform: uppercase;
             width: 70%;
             margin: 0 auto;
-                       
+
         }
         & label {
             font-weight: bold;
             font-size: 100%;
         }
         &__cta{
+            width: 200px;
+            height: 50px;
             background-color: $colordark;
             color: $colorlight;
             font-weight: bold;
-            // font-size: 100%;
-            border-radius: 10px;
+            font-size: 100%;
+            border-radius: 5px;
             border: 1px solid  $colordark;
-            width: fit-content !important;
-            padding: 10px 50px !important;
+            // width: fit-content !important;
+            // padding: 10px 50px !important;
             margin: 10px auto;
-            &:hover {
-                cursor: pointer;
+            transition: .4s ease all;
+            position: relative;
+	        overflow: hidden;
+
+            & span {
+                width: 100%;
+                height: 50px;
+                position: relative;
+                z-index: 2;
+	            transition: .3s ease all;
+
+                & input {
+                    width: 100%;
+                    height: 50px;
+                    color: $colorlight;
+                    background-color: transparent;
+                    font-weight: bolder;
+                    z-index: 3;
+                    transition: .3s ease all;
+                    &:hover {
+                        cursor: pointer;
+                        color: #fff ;
+                    }
+                }
             }
+            ::after {
+                content: "";
+                width: 1PX;
+                height: 1PX;
+                background: none;
+                position: absolute;
+                z-index: 1;
+                top: 50% ;
+                left: 50%;
+                transition: .5s ease-in-out all;
+                border-radius: 100px;
+                transform-origin: center;
+            }
+            :hover::after {
+                transform: scale(150);
+                background: #1b1b8b;
+                color: #fff;
+                z-index: -1;
+            }
+
+            // & SVG {
+            //     width: 100%;
+            //     height: 100%;
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     fill: none;
+            //     z-index: 15;
+            // }
+            // & rect {
+            //     width: 100%;
+            //     height: 100%;
+            //     stroke: #000;
+            //     stroke-width: 5px;
+            //     stroke-dasharray: 1000;
+            //     stroke-dashoffset: 1000;
+            //     transition: 1s ease all;
+                
+            // }
+
+            // :hover rect {
+            //     stroke-dashoffset: 0;
+            // }
+
+
         }
     }
-    
+
     &__location {
         margin-top: 20px;
         display: flex;
@@ -59,10 +128,10 @@
         & iframe {
             margin-top: 20px;
             border-radius: 10px;
-            box-shadow: 1px 9px 30px darken($color: $colordark, $amount: 25%)  ; 
+            box-shadow: 1px 9px 30px darken($color: $colordark, $amount: 25%)  ;
             // white-space: 95%;
         }
-        
+
         & li {
             list-style: none;
             font-size: large;
@@ -72,7 +141,7 @@
             text-shadow: 1px 9px 10px darken($color: $colordark, $amount: 25%);
         }
     }
-    
+
 }
 
 @media (max-width:767px) {
@@ -83,7 +152,7 @@
         & input, textarea{
             width: 100%;
         }
-        
+
     }
 }
 
@@ -106,12 +175,12 @@
                 width: 270px;
                 height: 200px;
             }
-        } 
+        }
         &__head {
             font-size: 1.1em;
-        }  
-    }   
-    
+        }
+    }
+
 }
 
 
@@ -120,8 +189,8 @@
         & input, textarea, label {
             font-size: 80%;
         }
-    }   
-    
+    }
+
     .contact__location  {
         & ul li{
             font-size: 80%;
@@ -131,5 +200,5 @@
             height: 160px;
         }
     }
-    
+
 }
