@@ -600,3 +600,21 @@ main {
     .information ul {
       font-size: 14px;
       padding: 5px; } }
+
+.main__transporte h2 {
+  text-align: center;
+  background-image: linear-gradient(to right, #2a2aaf, #ffd);
+  padding: 0; }
+
+.main__transporte ul {
+  list-style: none;
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 10px;
+  font-size: 1.1rem; }
+
+.main__transporte-alta {
+  text-align: left;
+  margin-left: 5%; }
+  .main__transporte-alta ul {
+    list-style: disc; }

@@ -1,0 +1,22 @@
+.main__transporte {
+    & h2 {
+    text-align: center;
+    background-image: linear-gradient(to right, $colordark , $colorlight);
+    padding: 0;
+    }
+    & ul {
+        list-style: none;
+        text-align: left;
+        margin-left: 10%;
+        margin-top: 10px;
+        font-size: 1.1rem;
+    }
+    &-alta {
+        text-align: left;
+        margin-left: 5%;
+        & ul {
+            list-style: disc;
+        }
+    }
+
+}
