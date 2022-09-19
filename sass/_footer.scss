@@ -1,6 +1,31 @@
 .footer {
     background-color: $darkfooter;
     padding: 15px;
+    &__mapa {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        color: $lightfooter;
+        padding-bottom: 15px;
+        & h3 {
+            color: #0077c1;
+        }
+        & ul {
+            list-style: none;
+            & li {
+                padding: 2px 0;
+                :hover {
+                    text-shadow: 0px 0px 10px #0077c1;
+                }
+                & a {
+                    color: inherit;
+                    font-size: larger;
+                }
+                
+            }
+            
+        }
+    }
     &__expte{
         display: flex;
         justify-content: center;
@@ -48,12 +73,19 @@
     
 }
 @media (max-width:600px) {
-    .footer__expte a {
+    .footer {
+        &__expte a {
         font-size: 10px ;
         width: 250px;
         align-items: center;
-        & img {
+            & img {
             width: 25%;
+            }
+        }
+        &__mapa {
+            flex-direction: column;
+            text-align: center;
+            font-size: 12px
         }
     }
 }

@@ -20,7 +20,7 @@
         padding: 10px;
 
         & input, textarea {
-            border-radius: 10px;
+            border-radius: 5px;
             border: 1px solid $colordark;
             padding: 10px;
             font-size: 100%;
@@ -36,8 +36,8 @@
         &__cta{
             width: 200px;
             height: 50px;
-            background-color: $colordark;
-            color: $colorlight;
+            background-color: $colorlight;
+            color: $colordark;
             font-weight: bold;
             font-size: 100%;
             border-radius: 5px;
@@ -59,60 +59,61 @@
                 & input {
                     width: 100%;
                     height: 50px;
-                    color: $colorlight;
+                    color: $colordark;
                     background-color: transparent;
                     font-weight: bolder;
                     z-index: 3;
                     transition: .3s ease all;
-                    &:hover {
-                        cursor: pointer;
-                        color: #fff ;
-                    }
+                    
                 }
             }
-            ::after {
-                content: "";
-                width: 1PX;
-                height: 1PX;
-                background: none;
-                position: absolute;
-                z-index: 1;
-                top: 50% ;
-                left: 50%;
-                transition: .5s ease-in-out all;
-                border-radius: 100px;
-                transform-origin: center;
-            }
-            :hover::after {
-                transform: scale(150);
-                background: #1b1b8b;
-                color: #fff;
-                z-index: -1;
-            }
-
-            // & SVG {
-            //     width: 100%;
-            //     height: 100%;
+            // ::after {
+            //     content: "";
+            //     width: 1PX;
+            //     height: 1PX;
+            //     background: none;
             //     position: absolute;
-            //     top: 0;
-            //     left: 0;
-            //     fill: none;
-            //     z-index: 15;
+            //     z-index: 1;
+            //     top: 50% ;
+            //     left: 50%;
+            //     transition: .5s ease-in-out all;
+            //     border-radius: 100px;
+            //     transform-origin: center;
             // }
-            // & rect {
-            //     width: 100%;
-            //     height: 100%;
-            //     stroke: #000;
-            //     stroke-width: 5px;
-            //     stroke-dasharray: 1000;
-            //     stroke-dashoffset: 1000;
-            //     transition: 1s ease all;
-                
+            // :hover::after {
+            //     transform: scale(150);
+            //     background: #1b1b8b;
+            //     color: #fff;
+            //     z-index: -1;
             // }
 
-            // :hover rect {
-            //     stroke-dashoffset: 0;
-            // }
+            & SVG {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                fill: none;
+                z-index: 15;
+                &:hover {
+                    cursor: pointer;
+                    // color: #fff ;
+                }
+            }
+            & rect {
+                width: 100%;
+                height: 100%;
+                stroke: $colordark;
+                stroke-width: 5px;
+                stroke-dasharray: 1000;
+                stroke-dashoffset: 1000;
+                transition: 1s ease all;
+                
+            }
+
+            :hover rect {
+                stroke-dashoffset: 0;
+            }
 
 
         }
