@@ -4,7 +4,98 @@ main {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     min-height: 100vh;
+    position: relative;
 }
+
+.burbuja {
+    border-radius: 50%;
+    background: rgb(96, 81, 240);
+    opacity: .3;
+
+    position: absolute;
+    // bottom: 0;
+   
+    animation: burbujas 3s linear infinite;
+}
+.burbuja:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    left: 5%;
+    animation-duration: 3s;
+}
+
+.burbuja:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    left: 12%;
+    animation-duration: 5s;
+}
+.burbuja:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    left: 2%;
+    animation-duration: 4s;
+}
+.burbuja:nth-child(4) {
+    color: rgb(38, 38, 165);
+    width: 15px;
+    height: 15px;
+    left: 9%;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(5) {
+    width: 60px;
+    height: 60px;
+    left: 95%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(6) {
+    width: 50px;
+    height: 50px;
+    left: 87%;
+    animation-duration: 4s;
+}
+.burbuja:nth-child(7) {
+    width: 30px;
+    height: 30px;
+    left: 89%;
+    animation-duration: 3s;
+}
+.burbuja:nth-child(8) {
+    color: rgb(38, 38, 165);
+    width: 20px;
+    height: 20px;
+    left: 92%;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+@keyframes burbujas {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    25% {
+        opacity: .3;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .3;
+    }
+    100% {
+        bottom: 100%;
+        opacity: 0;
+    }
+}
+
+
+
 .main {
     width: 70vw;
     margin: 0 auto;
@@ -140,6 +231,12 @@ main {
         }
     }
 }
+@media (max-width:950px) {
+    .burbuja {
+        display: none;
+    }
+}
+
 @media (max-width:900px) {
     .main {
         width: 80vw;
