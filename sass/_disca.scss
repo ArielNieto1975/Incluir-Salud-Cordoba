@@ -33,6 +33,10 @@
             justify-content: center;
             align-items: center;
             color: $colorlight;
+            &:hover{
+                color: $colordark;
+                font-weight: bold;
+            }
         }
         
         & img {
@@ -44,9 +48,9 @@
             
         }
         &:hover {
-            transform: scale(0.95, 0.95);
+            transform: scale(1.05, 1.03);
             transition: all .5s;
-            box-shadow: 5px 5px 25px $colordark;
+            box-shadow: 2px 2px 25px $colordark;
         }
     }
     

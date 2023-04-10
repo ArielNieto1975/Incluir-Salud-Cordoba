@@ -108,6 +108,7 @@ main {
 }
 .introduccion {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
     align-items: center;
@@ -120,7 +121,8 @@ main {
     &__info {
         text-align: left;
         padding-left: 30px;
-        width: calc(100% - 500px);
+        // width: calc(100% - 30%);
+        width: 70%;
     }
 }
 .prestaciones {
@@ -206,7 +208,7 @@ main {
 
 @media (max-width:1000px) {
     .introduccion {
-        flex-direction: column;
+        // flex-direction: column;
         align-content: center;
         &__info {
             width: 100vw;
@@ -216,7 +218,7 @@ main {
 @media (max-width:1450px) {
     .introduccion {
         &__info {
-            width: 35vw;
+            width: 45vw;
         }
     }
 }
@@ -224,7 +226,7 @@ main {
 
 @media (max-width:1200px) {
     .introduccion {
-        flex-direction: column;
+        // flex-direction: column;
         align-content: center;
         &__info {
             width: 65vw;

@@ -59,17 +59,17 @@
                 <form class="contact__form" action="https://formspree.io/f/xeqdjrnv"
                 method="POST">
                     <label for="name">Nombre y Apellido</label>
-                    <input type="text" id="name" name="name" placeholder="ingrese su nombre...">
+                    <input type="text" id="name" name="name" placeholder="ingrese su nombre..." required>
                     <label for="dni">D.N.I.</label> 
-                    <input type="text" maxlength="8" id="dni" name="dni" placeholder="ingrese su DNI...">
+                    <input type="text" maxlength="8" id="dni" name="dni" placeholder="ingrese su DNI..." required>
                     <label for="direccion">Dirección</label>
                     <input type="text" id="direccion" name="direccion" placeholder="ingrese su domicilio...">
                     <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="ingrese su N° de telefono...">
-                    <label for="correo">Correo Electrónico:</label>
-                    <input type="email" id="correo" name="email" placeholder="Email..."/>
-                    <label for="consulta">Ingrese su mensaje:</label>
-                    <textarea name="message" id="consulta" cols="10" rows="10" placeholder="Consulta..."></textarea>
+                    <input type="tel" id="telefono" name="telefono" placeholder="ingrese su N° de telefono..." required>
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="email" placeholder="Email..." required/>
+                    <label for="consulta">Ingrese su mensaje</label>
+                    <textarea name="message" id="consulta" cols="10" rows="10" placeholder="Consulta..." required></textarea>
                     <button class="contact__form__cta boton">
                         <span><input type="submit" value="Enviar"></span>
                         <svg>
@@ -98,23 +98,21 @@
             </section>
         </div>
         
-        
+        <div class="burbujas">
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
         
     </main>
-    <div class="burbujas">
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-        <div class="burbuja"></div>
-    </div>
+    
 
-    <div class="whats">
-        <a href="https://web.whatsapp.com"><img src="https://cdn.iconscout.com/icon/free/png-512/whatsapp-circle-1868968-1583132.png" alt="contactenos por whatsapp" width="50" height="50"></a> 
-    </div>
+
 </body>
 <footer>
         
@@ -161,4 +159,7 @@
         <p>2022 © Incluir Salud - Córdoba. Developed by: <a href=""> <img src="../assets/an.png" alt=""> Desarrollo Web</a></p>
     </div>
 </footer>
+<div class="whats">
+    <a href="https://web.whatsapp.com"><img src="https://cdn.iconscout.com/icon/free/png-512/whatsapp-circle-1868968-1583132.png" alt="contactenos por whatsapp" width="50" height="50"></a> 
+</div>
 </html>

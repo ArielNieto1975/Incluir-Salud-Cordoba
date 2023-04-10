@@ -18,7 +18,7 @@
         margin: 0 auto;
         gap: 10px;
         padding: 10px;
-
+        
         & input, textarea {
             border-radius: 5px;
             border: 1px solid $colordark;
@@ -27,6 +27,9 @@
             text-transform: uppercase;
             width: 70%;
             margin: 0 auto;
+            &:focus{
+                outline-color: $colordark;
+            }
 
         }
         & label {
@@ -131,6 +134,9 @@
             border-radius: 10px;
             box-shadow: 1px 9px 30px darken($color: $colordark, $amount: 25%)  ;
             // white-space: 95%;
+            &:hover{
+                box-shadow: 1px 9px 40px darken($color: $colordark, $amount: 25%)
+            }
         }
 
         & li {
