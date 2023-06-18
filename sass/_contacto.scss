@@ -21,10 +21,12 @@
         
         & input, textarea {
             border-radius: 5px;
-            border: 1px solid $colordark;
+            // border: 1px solid $colordark;
+            border: none;
             padding: 10px;
             font-size: 100%;
             text-transform: uppercase;
+            background-color: #f0f0f0;
             width: 70%;
             margin: 0 auto;
             &:focus{
@@ -66,8 +68,7 @@
                     background-color: transparent;
                     font-weight: bolder;
                     z-index: 3;
-                    transition: .3s ease all;
-                    
+                    transition: .3s ease all;                    
                 }
             }
             // ::after {
